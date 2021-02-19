@@ -36,19 +36,19 @@ class ProductCell: UITableViewCell {
         return label
     }()
     
-    // need an image
     private let decreaseButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setImage(nil, for: .normal)
+        button.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
         button.imageView?.contentMode = .scaleAspectFill
         
         return button
     }()
     
-    // need an image
     private let increaseButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setImage(nil, for: .normal)
+        button.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
         button.imageView?.contentMode = .scaleAspectFill
         
         return button
@@ -64,7 +64,6 @@ class ProductCell: UITableViewCell {
         return label
     }()
     
-    // image will be added
     private let productImage: UIImageView = {
         let imageView = UIImageView(image: nil)
         imageView.contentMode = .scaleAspectFit
