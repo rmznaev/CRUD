@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class MainViewController: UIViewController {
     
@@ -25,9 +26,11 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Products"
         view.backgroundColor = .yellow
         safeArea = view.layoutMarginsGuide
+            
+        title = "Products"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 25)]
         
         createProducts()
         setUpTableView()
